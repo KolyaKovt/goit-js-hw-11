@@ -2,7 +2,26 @@
   margin-top: 36px;
   margin-bottom: 32px;
   text-align: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  border-color: #ff3d00 transparent;
+  border-radius: 50%;
+  display: none; /* gotta be block */
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 0 auto;
+}
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .input {
   width: 272px;
@@ -35,29 +54,39 @@
 }
 
 .images-list {
+  list-style: none;
   max-width: 1550px;
   margin: 0 auto;
+  margin-bottom: 36px;
   padding: 0 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-.card-link {
-  display: block;
+.images-item {
   min-width: 400px;
   width: calc((100% - 40px) / 3);
   border: 1px solid black;
   border-radius: 4px;
-  text-decoration: none;
-  color: black;
 }
-.image {
+.card-link {
+  display: block;
+}
+.card-image {
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
 .image-desciption-table {
-  width: 100%;
   padding: 10px 20px;
+  width: 100%;
+  border-collapse: collapse;
+  width: 100%;
   text-align: center;
+}
+.description-row {
+  
+}
+.description-column {
+  
 }
