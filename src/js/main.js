@@ -15,12 +15,6 @@ const lightbox = new SimpleLightbox("#results .card-link", {
   captionsData: "alt",
 });
 
-// Save data after reload
-const hits = localStorage.getItem("hits");
-if (hits) {
-  fillImagesList(JSON.parse(hits));
-}
-
 form.addEventListener("submit", evt => {
   evt.preventDefault();
   const separateSign = "+";
@@ -46,8 +40,6 @@ form.addEventListener("submit", evt => {
 
         return;
       }
-
-      localStorage.setItem("hits", JSON.stringify(hits));
 
       fillImagesList(hits);
 
