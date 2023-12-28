@@ -16,18 +16,23 @@
     <script src="./js/main.js" type="module" defer></script>
   </head>
   <body>
-    <form class="form" id="form">
-      <input
-        class="input"
-        name="userInput"
-        type="text"
-        placeholder="Search images..."
-      />
-      <button class="btn" id="search-btn" type="submit">Search</button>
-    </form>
+    <section class="search-section">
+      <h1 class="visually-hidden">search section</h1>
+      <form class="form" id="form">
+        <input
+          class="input"
+          name="userInput"
+          type="text"
+          placeholder="Search images..."
+        />
+        <button class="btn" id="search-btn" type="submit">Search</button>
+      </form>
+    </section>
 
-    <div class="loader"></div>
-
-    <ul class="images-list" id="images"></ul>
+    <section class="search-results-section">
+      <h2 class="visually-hidden">results of the search</h2>
+      <div class="loader"></div>
+      <ul class="results-list" id="results"></ul>
+    </section>
   </body>
 </html>

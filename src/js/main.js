@@ -7,10 +7,10 @@ import "izitoast/dist/css/iziToast.min.css";
 const form = document.getElementById("form");
 const loader = document.querySelector(".loader");
 const input = form.elements.userInput;
-const imagesList = document.getElementById("images");
+const imagesList = document.getElementById("results");
 
 // light create SimpleLightBox
-const lightbox = new SimpleLightbox(".images-list .card-link", {
+const lightbox = new SimpleLightbox("#results .card-link", {
   captionDelay: 250,
   captionsData: "alt",
 });
@@ -83,7 +83,7 @@ function fillImagesList(hits) {
 
   hits.forEach(hit => {
     const li = document.createElement("li");
-    li.className = "images-item";
+    li.className = "results-item";
     li.innerHTML = `
     <a class="card-link" href="${hit.largeImageURL}">
       <img class="card-image" src="${hit.webformatURL}" alt="${hit.tags}" />
