@@ -4,6 +4,8 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
+import errorIcon from "/close-message.svg";
+
 const form = document.getElementById("form");
 const loader = document.querySelector(".loader");
 const input = form.elements.userInput;
@@ -60,7 +62,7 @@ function showError(errorText) {
     maxWidth: "380px",
     messageSize: 16,
     position: "topRight",
-    iconUrl: "/close-message.svg",
+    iconUrl: errorIcon,
     theme: "dark",
     color: "#fff",
     backgroundColor: "#EF4040",
