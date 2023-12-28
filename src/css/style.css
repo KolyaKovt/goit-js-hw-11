@@ -77,16 +77,12 @@
   height: 300px;
   object-fit: cover;
 }
-.image-desciption-table {
-  padding: 10px 20px;
+.image-description-table {
   width: 100%;
-  border-collapse: collapse;
-  width: 100%;
+  height: 50px;
   text-align: center;
+  border-collapse: collapse;
 }
-.description-row {
-  
-}
-.description-column {
-  
+.description-row:last-child .description-column {
+  padding-bottom: 5px;
 }

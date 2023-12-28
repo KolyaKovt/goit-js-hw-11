@@ -88,7 +88,7 @@ function fillImagesList(hits) {
     <a class="card-link" href="${hit.largeImageURL}">
       <img class="card-image" src="${hit.webformatURL}" alt="${hit.tags}" />
     </a>
-    <table class="image-desciption-table">
+    <table class="image-description-table">
       <tr class="description-row">
         <th class="description-column">Likes</th>
         <th class="description-column">Views</th>
